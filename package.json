@@ -6,7 +6,7 @@
 		"node": "22.16.0"
 	},
 	"scripts": {
-		"prepare": "panda codegen",
+		"prepare": "husky && panda codegen",
 		"dev": "next dev --turbopack",
 		"build": "panda codegen && next build",
 		"start": "next start",
@@ -27,6 +27,8 @@
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.1.0",
 		"typescript": "^5"
 	}
 }
