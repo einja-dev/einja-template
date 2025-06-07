@@ -110,7 +110,6 @@ export default defineConfig({
 					className: "heading",
 					description: "Heading styles",
 					base: {
-						margin: 0,
 						lineHeight: "1.2",
 						fontWeight: "bold",
 						letterSpacing: "-0.02em"
