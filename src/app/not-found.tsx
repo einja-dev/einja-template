@@ -1,20 +1,53 @@
 import { Heading } from "@/components/Heading/Heading";
-import { Text } from "@/components/Text/Text";
+import { css } from "@/styled-system/css";
 import Link from "next/link";
 
 export default function NotFound() {
 	return (
-		<div className="min-h-screen flex flex-col items-center justify-center p-4">
-			<div className="text-center">
-				<Heading level="h1" className="mb-4">
+		<div
+			className={css({
+				minH: "100vh",
+				display: "flex",
+				flexDir: "column",
+				alignItems: "center",
+				justifyContent: "center",
+				p: "4",
+				bg: "white",
+			})}
+		>
+			<div
+				className={css({
+					textAlign: "center",
+				})}
+			>
+				<Heading level="h1" className={css({ mb: "4" })}>
 					404 - Page Not Found
 				</Heading>
-				<Text as="p" className="mb-8 text-gray-600">
+				<p
+					className={css({
+						color: "gray.600",
+						mb: "8",
+						fontSize: "lg",
+					})}
+				>
 					申し訳ありません。お探しのページが見つかりませんでした。
-				</Text>
+				</p>
 				<Link
 					href="/"
-					className="inline-block px-6 py-3 bg-primary text-white rounded-md hover:bg-primary/80 transition-colors"
+					className={css({
+						display: "inline-flex",
+						alignItems: "center",
+						justifyContent: "center",
+						px: "6",
+						py: "3",
+						bg: "blue.500",
+						color: "white",
+						fontWeight: "semibold",
+						rounded: "md",
+						_hover: { bg: "blue.600" },
+						_active: { bg: "blue.700" },
+						transition: "all 0.2s",
+					})}
 				>
 					トップページへ戻る
 				</Link>
