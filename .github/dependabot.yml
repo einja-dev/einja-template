@@ -29,6 +29,13 @@ updates:
         update-types:
           - "minor"
           - "patch"
+    # Auto-merge設定
+    auto-merge: true
+    auto-merge-conditions:
+      - "author=dependabot[bot]"
+      - or:
+        - "update-type=version-update:semver-patch"
+        - "only-lockfile-modifications"
       
   # GitHub Actions の更新設定
   - package-ecosystem: "github-actions"
@@ -46,4 +53,11 @@ updates:
       - "github-actions"
     commit-message:
       prefix: "chore"
-      include: "scope" 
+      include: "scope"
+    # Auto-merge設定
+    auto-merge: true
+    auto-merge-conditions:
+      - "author=dependabot[bot]"
+      - or:
+        - "update-type=version-update:semver-patch"
+        - "only-lockfile-modifications" 
