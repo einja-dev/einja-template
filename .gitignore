@@ -45,3 +45,6 @@ styled-system
 styled-system-studio
 *storybook.log
 storybook-static
+
+# claude
+.claude/settings.local.json
