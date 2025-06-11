@@ -29,8 +29,8 @@ export default defineConfig({
 						transition: "all 0.2s",
 						_disabled: {
 							cursor: "not-allowed",
-							opacity: 0.5
-						}
+							opacity: 0.5,
+						},
 					},
 					variants: {
 						variant: {
@@ -38,31 +38,31 @@ export default defineConfig({
 								bg: "blue.500",
 								color: "white",
 								_hover: { bg: "blue.600" },
-								_active: { bg: "blue.700" }
+								_active: { bg: "blue.700" },
 							},
 							outline: {
 								border: "1px solid",
 								borderColor: "blue.500",
 								color: "blue.500",
 								_hover: { bg: "blue.50" },
-								_active: { bg: "blue.100" }
+								_active: { bg: "blue.100" },
 							},
 							ghost: {
 								color: "blue.500",
 								_hover: { bg: "blue.50" },
-								_active: { bg: "blue.100" }
-							}
+								_active: { bg: "blue.100" },
+							},
 						},
 						size: {
 							sm: { px: "3", py: "2", fontSize: "sm" },
 							md: { px: "4", py: "2", fontSize: "md" },
-							lg: { px: "5", py: "3", fontSize: "lg" }
-						}
+							lg: { px: "5", py: "3", fontSize: "lg" },
+						},
 					},
 					defaultVariants: {
 						variant: "solid",
-						size: "md"
-					}
+						size: "md",
+					},
 				},
 				text: {
 					className: "text",
@@ -71,7 +71,7 @@ export default defineConfig({
 						margin: 0,
 						lineHeight: "normal",
 						minWidth: 0,
-						fontWeight: "normal"
+						fontWeight: "normal",
 					},
 					variants: {
 						size: {
@@ -81,30 +81,30 @@ export default defineConfig({
 							lg: { fontSize: "lg" },
 							xl: { fontSize: "xl" },
 							"2xl": { fontSize: "2xl" },
-							"3xl": { fontSize: "3xl" }
+							"3xl": { fontSize: "3xl" },
 						},
 						weight: {
 							normal: { fontWeight: "normal" },
 							medium: { fontWeight: "medium" },
 							semibold: { fontWeight: "semibold" },
-							bold: { fontWeight: "bold" }
+							bold: { fontWeight: "bold" },
 						},
 						align: {
 							left: { textAlign: "left" },
 							center: { textAlign: "center" },
-							right: { textAlign: "right" }
+							right: { textAlign: "right" },
 						},
 						transform: {
 							uppercase: { textTransform: "uppercase" },
 							lowercase: { textTransform: "lowercase" },
-							capitalize: { textTransform: "capitalize" }
-						}
+							capitalize: { textTransform: "capitalize" },
+						},
 					},
 					defaultVariants: {
 						size: "md",
 						weight: "normal",
-						align: "left"
-					}
+						align: "left",
+					},
 				},
 				heading: {
 					className: "heading",
@@ -112,52 +112,52 @@ export default defineConfig({
 					base: {
 						lineHeight: "1.2",
 						fontWeight: "bold",
-						letterSpacing: "-0.02em"
+						letterSpacing: "-0.02em",
 					},
 					jsx: ["h1", "h2", "h3", "h4", "h5", "h6"],
 					variants: {
 						level: {
-							h1: { 
+							h1: {
 								fontSize: "4xl",
-								fontWeight: "extrabold"
+								fontWeight: "extrabold",
 							},
-							h2: { 
+							h2: {
 								fontSize: "3xl",
-								fontWeight: "bold"
+								fontWeight: "bold",
 							},
-							h3: { 
+							h3: {
 								fontSize: "2xl",
-								fontWeight: "semibold"
+								fontWeight: "semibold",
 							},
-							h4: { 
+							h4: {
 								fontSize: "xl",
-								fontWeight: "semibold"
+								fontWeight: "semibold",
 							},
-							h5: { 
+							h5: {
 								fontSize: "lg",
-								fontWeight: "medium"
+								fontWeight: "medium",
 							},
-							h6: { 
+							h6: {
 								fontSize: "md",
-								fontWeight: "medium"
-							}
+								fontWeight: "medium",
+							},
 						},
 						align: {
 							left: { textAlign: "left" },
 							center: { textAlign: "center" },
-							right: { textAlign: "right" }
-						}
+							right: { textAlign: "right" },
+						},
 					},
 					defaultVariants: {
-						align: "left"
-					}
-				}
-			}
+						align: "left",
+					},
+				},
+			},
 		},
 	},
 
 	// The output directory for your css system
 	outdir: "styled-system",
 
-	jsxFramework: "react"
+	jsxFramework: "react",
 });

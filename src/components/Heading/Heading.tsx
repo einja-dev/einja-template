@@ -8,57 +8,23 @@ type Props = HeadingVariantProps &
 
 export const Heading = forwardRef<HTMLHeadingElement, Props>(
 	({ level, align, className, ...props }, ref) => {
-		const headingClasses = className ? `${heading({ level, align })} ${className}` : heading({ level, align });
+		const headingClasses = className
+			? `${heading({ level, align })} ${className}`
+			: heading({ level, align });
 
 		switch (level) {
 			case "h1":
-				return (
-					<h1
-						ref={ref}
-						className={headingClasses}
-						{...props}
-					/>
-				);
+				return <h1 ref={ref} className={headingClasses} {...props} />;
 			case "h2":
-				return (
-					<h2
-						ref={ref}
-						className={headingClasses}
-						{...props}
-					/>
-				);
+				return <h2 ref={ref} className={headingClasses} {...props} />;
 			case "h3":
-				return (
-					<h3
-						ref={ref}
-						className={headingClasses}
-						{...props}
-					/>
-				);
+				return <h3 ref={ref} className={headingClasses} {...props} />;
 			case "h4":
-				return (
-					<h4
-						ref={ref}
-						className={headingClasses}
-						{...props}
-					/>
-				);
+				return <h4 ref={ref} className={headingClasses} {...props} />;
 			case "h5":
-				return (
-					<h5
-						ref={ref}
-						className={headingClasses}
-						{...props}
-					/>
-				);
+				return <h5 ref={ref} className={headingClasses} {...props} />;
 			case "h6":
-				return (
-					<h6
-						ref={ref}
-						className={headingClasses}
-						{...props}
-					/>
-				);
+				return <h6 ref={ref} className={headingClasses} {...props} />;
 		}
 	},
 );
