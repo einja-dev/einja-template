@@ -13,8 +13,12 @@ export default function Home() {
 					<Button>Click me</Button>
 					<Button variant="outline">Click me</Button>
 					<Button variant="ghost">Click me</Button>
-					<Button variant="outline">Click me</Button>
-					<Button variant="ghost">Click me</Button>
+					<Button variant="outline" size="sm">
+						Click me
+					</Button>
+					<Button variant="ghost" size="lg">
+						Click me
+					</Button>
 				</div>
 			</section>
 
