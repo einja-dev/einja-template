@@ -7,7 +7,7 @@
 	},
 	"scripts": {
 		"prepare": "husky && panda codegen",
-		"dev": "next dev --turbopack",
+		"dev": "rm -rf .next && next dev --turbopack",
 		"build": "panda codegen && next build",
 		"start": "next start",
 		"lint": "biome check .",
