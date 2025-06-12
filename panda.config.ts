@@ -13,6 +13,14 @@ export default defineConfig({
 	// Useful for theme customization
 	theme: {
 		extend: {
+			breakpoints: {
+				sm: "640px",
+				md: "768px",
+				lg: "1024px",
+				xl: "1280px",
+				"2xl": "1440px",
+			},
+			tokens: {},
 			recipes: {
 				button: {
 					className: "button",
@@ -68,7 +76,6 @@ export default defineConfig({
 					className: "text",
 					description: "Text styles",
 					base: {
-						margin: 0,
 						lineHeight: "normal",
 						minWidth: 0,
 						fontWeight: "normal",
