@@ -7,7 +7,7 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": ["styled-system"]
+		"ignore": ["styled-system", ".next"]
 	},
 	"formatter": {
 		"enabled": true,
